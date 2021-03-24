@@ -28,14 +28,13 @@ export const BarGraph = () => {
         return new Date(getDate(post.createdAt)).getMonth();
     });
 
-    console.log('Posts' + months)
-
+    
     const monthsObj = months.reduce((acc, month) => {
         acc[month] = (acc[month] || 0) + 1;
         return acc;
     }, {});
 
-    console.log('Luni' + monthsObj)
+    
 
     const rawData = Object.values(monthsObj);
 
