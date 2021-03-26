@@ -3,6 +3,7 @@ import { client } from "./api/posts";
 import { ApolloProvider } from "@apollo/client";
 import { BarGraph } from "./components/BarGraph";
 
+
 function App() {
   return (
     <ApolloProvider client={client}>
